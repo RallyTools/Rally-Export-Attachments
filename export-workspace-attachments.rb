@@ -57,9 +57,10 @@
 $my_base_url	       = "https://rally1.rallydev.com/slm"
 $my_username	       = "user@company.com"
 $my_password	       = "topsecret"
-$my_vars	           = "./my_vars.rb"
-$my_api_version      = "1.43"
-$my_workspace_oid    = "12345678910"
+$my_api_version        = "1.43"
+$my_workspace_oid      = "12345678910"
+$my_vars	       = "./my_vars.rb"
+
 
 if FileTest.exist?( $my_vars ); puts "Loading variables from #{$my_vars}..."; require $my_vars; end
 
@@ -173,7 +174,7 @@ end
 #
 def get_open_project_count (this_workspace)
 	query			= RallyAPI::RallyQuery.new()
-	query.workspace		= this_workspace
+        query.workspace         = this_workspace
 	query.project		= nil
 	query.project_scope_up	= true
 	query.project_scope_down= true
