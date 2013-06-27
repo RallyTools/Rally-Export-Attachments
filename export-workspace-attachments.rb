@@ -54,10 +54,10 @@
 #
 # ------------------------------------------------------------------------------
 
-$my_base_url	     = "https://rally1.rallydev.com/slm"
-$my_username	     = "user@company.com"
-$my_password	     = "topsecret"
-$my_vars	     = "./my_vars.rb"
+$my_base_url	       = "https://rally1.rallydev.com/slm"
+$my_username	       = "user@company.com"
+$my_password	       = "topsecret"
+$my_vars	           = "./my_vars.rb"
 $my_api_version      = "1.43"
 $my_workspace_oid    = "12345678910"
 
@@ -83,7 +83,8 @@ def fixup_args ()
 			$my_base_url.concat("/slm")
 		end
 		print " to #{$my_base_url}\n"
-	end
+  end
+
 end
 
 
@@ -145,8 +146,8 @@ end
 # ------------------------------------------------------------------------------
 # Create a directory (with caveats).
 #
-DIR_NEW=0	# Directory must be new (exit if it exists)
-DIR_CANBOLD=1	# Use existing directory if it already exists
+DIR_NEW = 0	# Directory must be new (exit if it exists)
+DIR_CAN_BE_OLD = 1	# Use existing directory if it already exists
 
 def create_export_dir (dir_name, state)
 
@@ -293,7 +294,7 @@ type_hash = Hash.new (0)
 	all_workspace_attachments.each_with_index do |this_workspace_attachment, count_workspace_attachments| #{
 		count_all_attachments += 1
 
-		print "     %05d - Attachment[%03d] Size=#{this_workspace_attachment.Size}\n"%[count_all_attachments, count_workspace_attachments+1]
+		print "     %05d - Attachment[%03d] Size=#{this_workspace_attachment.Size}\n"%[count_all_attachments, count_workspace_attachments + 1 ]
 		# Debugging code ... don't do them all
 		#if count_all_attachments != 35 then
 		#	next
@@ -360,7 +361,7 @@ type_hash = Hash.new (0)
 		# artifact or testcase or testset.
 		#
 		print "Create an artifact directory within the workspace directory for saving attachments: #{dir_name_artifact}\n"
-		create_export_dir(dir_name_artifact, DIR_CANBOLD)
+		create_export_dir(dir_name_artifact, DIR_CAN_BE_OLD)
 
 
 		# --------------------------------------------------------------
