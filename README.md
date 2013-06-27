@@ -34,13 +34,16 @@ Usage:
 	<pre> c:\> ruby export-workspace-attachments.rb </pre>
 
 3) All attachments found will be saved in:
-	- ./Saved_Attachments/WS####/FormattedIDs/attachment-###.<type>.<ext>
+<pre> ./Saved_Attachments/WS####/FormattedIDs/attachment-###.{type}.{ext} </pre>
+
    Where:
-- WS### - is the ordinal workspace number found (1 based).
-- FormattedIDs - is the combination of the FormattedID(s) of the Artifact, TestCaseResult or TestSet to which the attachment belongs.
-- attachment-### - is the ordinal attachment number found in a given workspace (1 based).
-- <type> - is the type of file, either "METADATA" or "DATA".
-- <ext> - is the file extension found on the attachment. Used on the DATA <type> file only.
+<pre>   
+WS### - is the ordinal workspace number found (1 based).
+FormattedIDs - is the combination of the FormattedID(s) of the Artifact, TestCaseResult or TestSet to which the attachment belongs.
+attachment-### - is the ordinal attachment number found in a given workspace (1 based).
+{type} - is the type of file, either "METADATA" or "DATA".
+{ext} - is the file extension found on the attachment. Used on the DATA {type} file only.
+</pre>
 
 API DOCS:
 - http://dev.developer.rallydev.com/developer/ruby-toolkit-rally-rest-api-json
