@@ -91,7 +91,7 @@ end
 # ------------------------------------------------------------------------------
 # Connect to Rally.
 #
-def connect_to_Rally ()
+def connect_to_rally ()
 	custom_headers		= RallyAPI::CustomHttpHeader.new()
 	custom_headers.name	= "export-workspace-attachments"
 	custom_headers.vendor   = "Rally Labs"
@@ -229,7 +229,7 @@ end
 # Main code starts here.
 #
 fixup_args()
-connect_to_Rally()
+connect_to_rally()
 get_workspace()
 
 #get_all_workspaces()
