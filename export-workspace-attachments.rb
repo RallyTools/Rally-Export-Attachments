@@ -412,8 +412,8 @@ type_hash = Hash.new (0)
 
 end #} of "all_workspaces.each_with_index do |this_workspace, count_workspace|"
 
-byteStr = total_bytes.to_s.gsub(/(\d)(?=(\d\d\d)+(?!\d))/, "\\1,")
-print "Found a total of #{count_all_attachments} attachments in ALL WORKSPACES; total bytes = %s.\n"%[byteStr]
+byte_string = total_bytes.to_s.gsub(/(\d)(?=(\d\d\d)+(?!\d))/, "\\1,")
+print "Found a total of #{count_all_attachments} attachments in ALL WORKSPACES; total bytes = %s.\n"%[byte_string]
 pp type_hash.sort
 
 #end#
