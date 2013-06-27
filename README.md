@@ -7,8 +7,7 @@ SCRIPT:
 export-workspace-attachments.rb
 
 PURPOSE:
-Used to export all the attachments of a Rally subscription into individual
-files for archival.
+Used to export all the attachments of a Rally subscription into individual files for archival.
 
 USAGE:
 1) Change these four variables found in the code to match your environment:
