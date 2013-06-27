@@ -18,8 +18,8 @@ USAGE:
 - $my_workspace_oid # (ObjectID of the workspace you wish to export attachments from.)
 
 - Notes:
-- Note 1: you may find a list of your current/defaul workspace OID in your Subscription by visiting the following REST URL:
-- https://rally1.rallydev.com/slm/webservice/v2.0/workspaces/
+- Note 1: you may find your current/default workspace OID in your Subscription by visiting the following REST URL:
+- https://rally1.rallydev.com/slm/webservice/v2.0/workspace/
 - To get a list of all Workspace OIDs in your Subscription, visit:
 - https://rally1.rallydev.com/slm/doc/webservice/jsonDisplay.jsp?uri=https://rally1.rallydev.com/slm/webservice/v2.0/subscription&fetch=true
 - Then click on the link that looks similar to the following:
