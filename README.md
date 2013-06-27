@@ -15,7 +15,7 @@ Used to export all the attachments of a Rally subscription into individual files
 Usage:
 ======
 
-1) Change these four variables found in the code to match your environment. Or, add them to a file called
+1) Change the following four variables found in the code to match your environment. Alternatively, add them to a file called
 my_vars.rb located in the same directory. The script will automatically look for, and load the variables
 from this file if found.
 
