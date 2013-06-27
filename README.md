@@ -3,16 +3,16 @@ Rally-Export-Attachments
 
 Ruby script to export all attachments from a specified Rally Workspace for archival purposes
 
-SCRIPT:
+Script:
 =======
 export-workspace-attachments.rb
 
-PURPOSE:
+Purpose:
 ========
 
 Used to export all the attachments of a Rally subscription into individual files for archival.
 
-USAGE:
+Usage:
 ======
 
 1) Change these four variables found in the code to match your environment:
