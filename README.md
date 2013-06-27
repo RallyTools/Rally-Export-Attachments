@@ -16,10 +16,12 @@ Usage:
 ======
 
 1) Change these four variables found in the code to match your environment:
-- $my_base_url
-- $my_username
-- $my_password
-- $my_workspace_oid # (ObjectID of the workspace you wish to export attachments from.)
+<pre>
+$my_base_url
+$my_username
+$my_password
+$my_workspace_oid # (ObjectID of the workspace you wish to export attachments from.)
+</pre>
 
 - Notes:
 - Note 1: you may find your current/default workspace OID in your Subscription by visiting the following REST URL:
