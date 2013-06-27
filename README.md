@@ -31,7 +31,7 @@ Usage:
 - Note 2: It's recommended to run this script as a Subscription Administrator, to ensure that access to all Workspaces/Projects/Artifacts of interest
 
 2) Invoke the script:
-	./export-workspace-attachments.rb
+	c:\> ruby export-workspace-attachments.rb
 
 3) All attachments found will be saved in:
 	- ./Saved_Attachments/WS####/FormattedIDs/attachment-###.<type>.<ext>
