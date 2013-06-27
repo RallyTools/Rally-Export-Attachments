@@ -197,7 +197,7 @@ end
 #
 def get_all_workspace_attachments (this_workspace)
         query		= RallyAPI::RallyQuery.new()
-	query.workspace	= this_workspace
+	      query.workspace	= this_workspace
         query.type	= :attachment
 
         query.fetch	=		"Artifact"
