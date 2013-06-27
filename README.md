@@ -17,10 +17,10 @@ Usage:
 
 1) Change these four variables found in the code to match your environment:
 <pre>
-$my_base_url
-$my_username
-$my_password
-$my_workspace_oid # (ObjectID of the workspace you wish to export attachments from.)
+$my_base_url       = "https://rally1.rallydev.com/slm"
+$my_username       = "user@company.com"
+$my_password       = "topsecret"
+$my_workspace_oid  = "12345678910" # (ObjectID of the workspace you wish to export attachments from.)
 </pre>
 
 - Notes:
