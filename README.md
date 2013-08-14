@@ -1,4 +1,14 @@
-Rally-Export-Attachments
+License
+========================
+
+Copyright (c) Rally Software Development Corp. 2013 Distributed under the MIT License.
+
+Warranty
+========================
+
+Rally-Export-Attachments is available on an as-is basis. Rally Software does not provide any support for this utility.
+
+Introduction to the Rally-Export-Attachments
 ========================
 
 Ruby script to export all attachments from a specified Rally Workspace for archival purposes
