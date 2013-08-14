@@ -1,29 +1,24 @@
-License
-========================
+## License
 
 Copyright (c) Rally Software Development Corp. 2013 Distributed under the MIT License.
 
-Warranty
-========================
+## Warranty
 
 Rally-Export-Attachments is available on an as-is basis. Rally Software does not provide any support for this utility.
 
-Introduction to the Rally-Export-Attachments
-========================
+## Introduction
 
-Ruby script to export all attachments from a specified Rally Workspace for archival purposes
+The Rally-Export-Attachments is a Ruby script to export all attachments from a specified Rally Workspace for archival purposes
 
-Script:
-=======
+### Script
+
 export-workspace-attachments.rb
 
-Purpose:
-========
+### Purpose
 
 Used to export all the attachments of a Rally subscription into individual files for archival.
 
-Usage:
-======
+### Usage
 
 1) Change the following four variables found in the code to match your environment. Alternatively, add them to a file called
 my_vars.rb located in the same directory. The script will automatically look for, and load the variables
@@ -36,14 +31,14 @@ $my_password       = "topsecret"
 $my_workspace_oid  = "12345678910" # (ObjectID of the workspace you wish to export attachments from.)
 </pre>
 
-- Notes:
-- Note 1: you may find your current/default workspace OID in your Subscription by visiting the following REST URL:
-- https://rally1.rallydev.com/slm/webservice/v2.0/workspace/
-- To get a list of all Workspace OIDs in your Subscription, visit:
-- https://rally1.rallydev.com/slm/doc/webservice/jsonDisplay.jsp?uri=https://rally1.rallydev.com/slm/webservice/v2.0/subscription&fetch=true
-- Then click on the link that looks similar to the following:
-- https://rally1.rallydev.com/slm/webservice/v2.0/Subscription/12345678914/Workspaces
-- Note 2: It's recommended to run this script as a Subscription Administrator, to ensure that access to all Workspaces/Projects/Artifacts of interest
+Notes
+- you may find your current/default workspace OID in your Subscription by visiting the following REST URL:
+  - https://rally1.rallydev.com/slm/webservice/v2.0/workspace/
+  - To get a list of all Workspace OIDs in your Subscription, visit:
+  - https://rally1.rallydev.com/slm/doc/webservice/jsonDisplay.jsp?uri=https://rally1.rallydev.com/slm/webservice/v2.0/subscription&fetch=true
+  - Then click on the link that looks similar to the following:
+  - https://rally1.rallydev.com/slm/webservice/v2.0/Subscription/12345678914/Workspaces
+- It's recommended to run this script as a Subscription Administrator, to ensure that access to all Workspaces/Projects/Artifacts of interest
 
 2) Invoke the script:
 	<pre> c:\> ruby export-workspace-attachments.rb </pre>
@@ -60,15 +55,17 @@ attachment-### - is the ordinal attachment number found in a given workspace (1 
 {ext} - is the file extension found on the attachment. Used on the DATA {type} file only.
 </pre>
 
-Considerations:
-======
+### Considerations
+
 You will want to modify the script to use "wb" instead of "w" when creating the attachment files so that on Windows systems so EOL <--> CRLF conversion is suppressed. Without this mod, binary files like docx, xlsx, jpg, pdf, are corrupted.  (Credit: Nick Bartolotti)
 
-API DOCS:
+### API Documentation
+
 - http://prod.help.rallydev.com/developer/ruby-toolkit-rally-rest-api-json
 - https://github.com/RallyTools/RallyRestToolkitForRuby
 
-RUBY REQUIREMENTS:
+### Ruby Requirements 
+
 Tested on Ruby Versions:
 - ruby-1.9.3-p194
 - ruby-1.9.3-p327
