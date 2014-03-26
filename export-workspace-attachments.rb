@@ -370,7 +370,7 @@ type_hash = Hash.new (0)
 		#
 		file_name_meta = dir_name_artifact + "/attachment-%03d.META.txt"%[count_workspace_attachments+1]
 		print         "           Creating METADATA: filename=#{file_name_meta}\n"
-		file_meta = File.new(file_name_meta,"w")
+		file_meta = File.new(file_name_meta,"wb")
 
 		file_meta.syswrite "Attachment.Artifact.FormattedID                : #{artifact_formatted_id}\n"
 		file_meta.syswrite "Attachment.Artifact.CreationDate               : #{artifact_creation_date}\n"
@@ -398,10 +398,10 @@ type_hash = Hash.new (0)
 		if this_workspace_attachment.Content == nil
 			# Yes it is possible to have an attachment with no content
 			extension = ".empty"
-			file_data = File.new(file_name_data + extension,"w")
+			file_data = File.new(file_name_data + extension,"wb")
 		else
 			extension = "." + this_workspace_attachment.Name.split(".")[-1]
-			file_data = File.new(file_name_data + extension,"w")
+			file_data = File.new(file_name_data + extension,"wb")
 			this_content = this_workspace_attachment.Content.read 
 			file_data.syswrite(Base64.decode64(this_content.Content))
 		end
