@@ -55,10 +55,6 @@ attachment-### - is the ordinal attachment number found in a given workspace (1 
 {ext} - is the file extension found on the attachment. Used on the DATA {type} file only.
 </pre>
 
-### Considerations
-
-You will want to modify the script to use "wb" instead of "w" when creating the attachment files so that on Windows systems so EOL <--> CRLF conversion is suppressed. Without this mod, binary files like docx, xlsx, jpg, pdf, are corrupted.  (Credit: Nick Bartolotti)
-
 ### API Documentation
 
 - http://prod.help.rallydev.com/developer/ruby-toolkit-rally-rest-api-json
